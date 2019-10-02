@@ -1,8 +1,8 @@
 # Table of contents
 
-* [About](README.md)
+* [Changelog](README.md)
 
-## Welcome
+## FAQ
 
-* [DBB Docs](welcome/dbb-docs.md)
+* [Blocks](faq/blocks.md)
 
