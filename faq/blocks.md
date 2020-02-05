@@ -16,6 +16,8 @@ Its easy if you want to use them Only by yourself just Place the JS file in your
 
 Only if modifications on the File made that interacts with the Block (not the `code` part) DBB needs to be Restarted.
 
+If you want to make your Block Public send it to Gold (and grap your Blocks Dev rank in Discord :D ).
+
 ---
 
 ## The Line Types
@@ -29,7 +31,7 @@ How to use them we'll see later.
 
 ---
 
-### The Basic Structure
+## The Basic Structure
 
 1. The default Structure:
 <details>
@@ -135,7 +137,7 @@ How to use them we'll see later.
   These are the Options of your Block showen in DBB.
   *If you Update Something here Please Restart DBB to see it there.*
   
-  #### Basic Options
+  ### Basic Options
   
   ```javascript
     options: [
@@ -148,7 +150,7 @@ How to use them we'll see later.
     ]
   ```
   
-  ##### The Option Types
+  #### The Option Types
   `type` supports `SELECT, TEXT, COLOR, NUMBER`
   
   By `type` => `COLOR` it will appere the Color-Picker to select a Color. 
@@ -166,7 +168,7 @@ How to use them we'll see later.
   /** value for code => */ 0 : "Option to Select" /** <= Shown in DBB */
   ```
   
-  ###### The `options` in `options` array Example:
+  ##### The `options` in `options` array Example:
   
   ```javascript
     options:[
@@ -206,7 +208,7 @@ How to use them we'll see later.
     
     }
   ```
-  ##### The `cache` Object
+  #### The `cache` Object
   
   The `cache` Object includes the Information arround the Block. Without this its useless.
   *You only need it for the included funktions from **this**.*
@@ -232,7 +234,7 @@ How to use them we'll see later.
   
   </details>
   
-  ##### The `this` Object
+  #### The `this` Object
   
   The `this` Object includes all activ Blocks (you **don't** need this) and some usefull Functions for you.
    
@@ -303,7 +305,7 @@ How to use them we'll see later.
     
   </details>
   
-  ##### `Modul loading with this.require()`
+  #### Modul loading with `this.require()`
   
   If you want to import an Module like `fs` or `path` that **aren't** downloaded **from npm**, simpley use it like anywhere else, just put it inside the `code` Field:
   
