@@ -264,7 +264,7 @@ How to use them we'll see later.
   `"value"` in `this.GetInputValue()` is defined in the `inputs` part of the Block.
   
   <details>
-    <summary>Input Object from Block</summary<
+    <summary>Input Object from Block</summary>
     
     ```javascript
     inputs: [
@@ -282,12 +282,13 @@ How to use them we'll see later.
         }
     ]
     ```
+    
   </details>
   
   `"action"` in `this.RunNextBlock()` is defined in the `outputs` part of the Block.
   
   <details>
-    <summary>Output Object from Block</summary<
+    <summary>Output Object from Block</summary>
     
     ```javascript
     outputs: [
@@ -299,6 +300,7 @@ How to use them we'll see later.
       }
     ]
     ```
+    
   </details>
   
   ##### `Modul loading with this.require()`
@@ -306,7 +308,7 @@ How to use them we'll see later.
   If you want to import an Module like `fs` or `path` that **aren't** downloaded **from npm**, simpley use it like anywhere else, just put it inside the `code` Field:
   
   <details>
-    <summary>Example</summary<
+    <summary>Example</summary>
     
     ```javascript
     code : function(cache){
@@ -314,12 +316,13 @@ How to use them we'll see later.
       // and go on like you wan't...
     }
     ```
+    
   </details>
   
   If you want to import an Module like `discord.js` **from npm** please use `this.require()` like this:
   
   <details>
-    <summary>Example</summary<
+    <summary>Example</summary>
     
     ```javascript
     code : function(cache){
@@ -327,8 +330,10 @@ How to use them we'll see later.
       // and go on :)
     }
     ```
+    
   </details>
   
   To improve Performance you should only use Default packages and if you need another try to use a minimal libary of this function.
+  
 </details>
 
