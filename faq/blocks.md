@@ -37,8 +37,8 @@ How to use them we'll see later.
 <details>
   <summary>The full Preview:</summary>
   
-  This Structur is the Block that get Showed in DBB Ther you can Place Stuff like Name, Description, Category and more.
-  Please make shure that you arent use the Same name for to Blocks!
+  This Structur is the Block that get showed in the DBB-Editor, there you can place Stuff like Name, Description, Category and more.
+  Please make shure that you arent use the same Name for tow Blocks!
   
   ```javascript
   module.exports = {
@@ -69,8 +69,8 @@ How to use them we'll see later.
 <details>
   <summary>Example</summary>
   
-  These are The Inputs and Outputs of your Block showen in DBB.
-  *If you Update Something here Please Restart DBB to see it there.*
+  These are The Inputs and Outputs of your Block showen in DBB-Editor.
+  *If you Update something here please restart the DBB-Editor to see it.*
   
   ```javascript
     inputs/outputs: [
@@ -84,15 +84,15 @@ How to use them we'll see later.
     // types : unspecified, undefined, null, object, boolean, number, text, list, date, action
   ```  
   
-  In the `name` fild gets the Name of the variable used in the code section. Please make shure that the names are Unique for the File.
+  In the `name` field gets the Name of the Variable used in the code section. Please make shure that the Names are Unique for the File.
   
-  `title` is the Name how it shown in DBB itself.
+  `title` is the Name how its shown in DBB-Editor itself.
   
-  `description` is the Text that Pops up if you Hover on the Connectionpoint in DBB. Helpfull to Descripe the Types here ;).
+  `description` is the Text that Pops up if you hover on the Connectionpoint in DBB-Editor. Helpfull to Descripe the Types here ;).
   
-  `types` is an Array of Types that can be Connected here. If you want only one Type to be Connected use `[ "yourtype" ]` if you need more use a comma seperated list inside the `[]` like this `[ "unspecified", "undefined", "null", "object" ]`.
+   `types` is an Array of Types that can be Connected here. If you want only one Type to be connected use `[ "yourtype" ]`. If you need more, use a comma seperated list inside the `[]` like this `[ "unspecified", "undefined", "null", "object" ]`.
    
-   The `inputs` field is an Array of Objects. That mean you can Add as many Inputs you need by Cloning the Object and add it again. To make it valid **between** the Objects there **needs** to be a `,`. Thats for all Type of Field from Type are Array!!!
+   The `inputs` field is an Array of Objects. That mean you can add as many Inputs you need by cloning the Object and add it again. To make it valid, **between** the Objects **needs** to be a `,`. Thats for all fields from type Array or Object!!!
    
    <details>
       <summary>Example</summary>
@@ -134,8 +134,8 @@ How to use them we'll see later.
 <details>
   <summary>Example</summary>
   
-  These are the Options of your Block showen in DBB.
-  *If you Update Something here Please Restart DBB to see it there.*
+  These are the Options of your Block showed in the DBB-Editor.
+  *If you Update something here please restart the DBB-Editor to see it.*
   
   ### Basic Options
   
@@ -161,7 +161,7 @@ How to use them we'll see later.
   By `type` => `SELECT` a Dropdown Menu will be shown in DBB.
   
   If you use any other then `SELECT` you are fine with this Options Structure.
-  By `SELECT` you need to add the `options` field to the `options` Object. (yea sounds wired, just go on :D ) 
+  If using `SELECT` you need to add the `options` field to the `options` Object. (yea sounds wired, just go on :D ) 
   The new `options` filed is an Array of Items.
   
   ```javascript
@@ -200,34 +200,35 @@ How to use them we'll see later.
   For this Stuff you need some knowledge in Javascript.
   You can do mostly anything here.
   
-  DBB always await the end of the Function. 
-  
+  DBB always await the end of the Function to execute Block by Block.
+  You only can controll where the Flow goes on.  
   
   ```javascript
     code: function(cache){
     
     }
   ```
+  
   #### The `cache` Object
   
-  The `cache` Object includes the Information arround the Block. Without this its useless.
+  The `cache` Object includes the information arround the Block. Without this the `code` can't interact with the lines.
   *You only need it for the included funktions from **this**.*
  
   <details>
-  
-  <summary>Example</summary>
+    <summary>Example</summary>
   
   ```javascript
   {
-  "name":"join_voicechannel",
+  "name":"",
   "index":"",
   "workspace":"",
   "inputs":{},
   "outputs":{}
   }
   ```
+  
   `name` is the Block Name itself.
-  `index` is the Number of the Block (out of DBB).
+  `index` is the Number of the Block (out of DBB-Editor).
   `workspace` is a Number what it mean... IDK :=).
   `inputs` is the Array of your Input lines (only the ID's of the Line gets here).
   `outputs` is an Array of your Output Lines (only the ID's too).
@@ -244,12 +245,11 @@ How to use them we'll see later.
   this.GetOptionValue("linename", cache);
   this.StoreOutputValue("value", "linename", cache);
   this.RunNextBlock("linename", cache);
-  this.require("modul");
+  this.require("npmmodul");
   // Just ignore anything else ;)
   ```
   
-  With this functions you can get or store the Input-, Option- and Outputvalues or run the next Block. (With the right function.
-  
+  With this functions you can get or store the Input-, Option- and Outputvalues or run the next Block. (with the right function)
   
   For Example here is the code Block from the Print Action.
   
@@ -264,6 +264,7 @@ How to use them we'll see later.
   ```
   
   `"value"` in `this.GetInputValue()` is defined in the `inputs` part of the Block.
+  Its the same with `this.StoreOutputValue()`. It only can be use for Output Lines!
   
   <details>
     <summary>Input Object from Block</summary>
@@ -307,7 +308,7 @@ How to use them we'll see later.
   
   #### Modul loading with `this.require()`
   
-  If you want to import an Module like `fs` or `path` that **aren't** downloaded **from npm**, simpley use it like anywhere else, just put it inside the `code` Field:
+  If you want to import an Module like `fs` or `path` that **aren't** downloaded **from npm**, simply use it like anywhere else, just put it inside the `code` field:
   
   <details>
     <summary>Example</summary>
@@ -335,7 +336,7 @@ How to use them we'll see later.
     
   </details>
   
-  To improve Performance you should only use Default packages and if you need another try to use a minimal libary of this function.
+  To improve Performance you should only use default Packages and if you need another, try to use a minimal libary of this function.
   
 </details>
 
