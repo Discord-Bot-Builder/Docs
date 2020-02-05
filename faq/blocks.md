@@ -22,7 +22,7 @@ If you want to make your Block Public send it to Gold (and grap your Blocks Dev 
 
 ## The Line Types
 
-If you worked with DBB already you know that there are some Different colors for lines. These are to make it easyer for you to see what can be connected (is the same type of var) and not only for the Style :D.
+If you worked with DBB already you know that there are some different Colors for lines. These are to make it easyer for you to see what can be connected (is the same type of var) and not only for the Style :D.
 
 The differen types are:
 ` unspecified, undefined, null, object, boolean, number, text, list, date, action `
