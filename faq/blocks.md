@@ -165,7 +165,7 @@ How to use them we'll see later.
   The new `options` filed is an Array of Items.
   
   ```javascript
-  /** value for code => */ 0 : "Option to Select" /** <= Shown in DBB */
+  /** value for code => */ 1 : "Option to Select" /** <= Shown in DBB */
   ```
   
   ##### The `options` in `options` array Example:
@@ -178,16 +178,14 @@ How to use them we'll see later.
         "description": "",
         "type": "SELECT",
         "options": [
-          0 : "Option to Select 1",
-          1 : "Option to Select 2",
-          ...
+          1 : "Option to Select 1",
+          2 : "Option to Select 2",
+          3 : ...
         ]
       }
     ]
   ```
   
-
-
 </details>
 
 4. The Code:
@@ -243,7 +241,7 @@ How to use them we'll see later.
   // Usefull stuff for you!!
   this.GetInputValue("linename", cache);
   this.GetOptionValue("linename", cache);
-  this.StoreOutputValue("value", "linename", cache);
+  this.StoreOutputValue(number, "linename", cache);
   this.RunNextBlock("linename", cache);
   this.require("npmmodul");
   // Just ignore anything else ;)
