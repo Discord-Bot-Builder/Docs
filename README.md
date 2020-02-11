@@ -1,4 +1,8 @@
-# Changelog
+---
+description: Official documentation about Discord Bot Builder.
+---
+
+# DBB Docs
 
 {% hint style="info" %}
 ### 2.0.0-beta1

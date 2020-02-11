@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Changelog](README.md)
+* [DBB Docs](README.md)
 
 ## FAQ
 
