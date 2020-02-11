@@ -33,10 +33,8 @@ How to use them we'll see later.
 
 ## The Basic Structure
 
-1. The default Structure:
-<details>
-  <summary>The full Preview:</summary>
-  
+  ## 1. The default Structure:
+
   This Structur is the Block that get showed in the DBB-Editor, there you can place Stuff like Name, Description, Category and more.
   Please make shure that you arent use the same Name for tow Blocks!
   
@@ -47,8 +45,6 @@ How to use them we'll see later.
     description: "",
 
     category: "",
-
-    auto_execute: true,
 
     inputs: [],
 
@@ -63,12 +59,8 @@ How to use them we'll see later.
   ```
   
   *Note: Gold* **loves** *to see the the brake between the Object Keys ;), Simply add them befor sending it to him.* 
-</details>
+  ## 2. The Inputs and Outputs:
 
-2. The Inputs and Outputs:
-<details>
-  <summary>Example</summary>
-  
   These are The Inputs and Outputs of your Block showen in DBB-Editor.
   *If you Update something here please restart the DBB-Editor to see it.*
   
@@ -94,8 +86,7 @@ How to use them we'll see later.
    
    The `inputs` field is an Array of Objects. That mean you can add as many Inputs you need by cloning the Object and add it again. To make it valid, **between** the Objects **needs** to be a `,`. Thats for all fields from type Array or Object!!!
    
-   <details>
-      <summary>Example</summary>
+   Example:
       
       ```javascript
       inputs: [
@@ -108,7 +99,7 @@ How to use them we'll see later.
         {
             "name": "value",
             "title": "Value",
-            "description": "Acceptable Types: Unspecified, Undefined, Null, Object, Boolean, Number, Text, List\n\nDescription: What it actually used for.",
+            "description": "Acceptable Types: Unspecified, Undefined, Null, Object, Boolean, Number, Text, List\n\nDescription: ",
             "types": ["unspecified", "undefined", "null", "object", "boolean", "number", "text", "list"]
         }
       ]
@@ -124,15 +115,8 @@ How to use them we'll see later.
         }
       ]
       ```
-      
-      ]
-   </details>
-   
-</details>
 
-3. The Options:
-<details>
-  <summary>Example</summary>
+## 3. The Options:
   
   These are the Options of your Block showed in the DBB-Editor.
   *If you Update something here please restart the DBB-Editor to see it.*
@@ -151,10 +135,11 @@ How to use them we'll see later.
   ```
   
   #### The Option Types
+  
   `type` supports `SELECT, TEXT, COLOR, NUMBER`
   
   By `type` => `COLOR` it will appere the Color-Picker to select a Color. 
-  *Note: Gold loves his Color-Picker, like it to and he likes you back ;D*
+  *Note: Gold loves his Color-Picker, like it too and he likes you back ;D*
   
   By `type` => `TEXT` or `NUMBER` a Field to type your Value in shows on the Block in DBB. 
   
@@ -185,13 +170,9 @@ How to use them we'll see later.
       }
     ]
   ```
-  
-</details>
 
-4. The Code:
-<details>
-  <summary>Example</summary>
-  
+## 4. The Code:
+
   The One and the only part that do something in your Bot.
   *All above is just to show it in the DBB Editor right.*
   
@@ -212,8 +193,7 @@ How to use them we'll see later.
   The `cache` Object includes the information arround the Block. Without this the `code` can't interact with the lines.
   *You only need it for the included funktions from **this**.*
  
-  <details>
-    <summary>Example</summary>
+  Example:
   
   ```javascript
   {
@@ -230,8 +210,6 @@ How to use them we'll see later.
   `workspace` is a Number what it mean... IDK :=).
   `inputs` is the Array of your Input lines (only the ID's of the Line gets here).
   `outputs` is an Array of your Output Lines (only the ID's too).
-  
-  </details>
   
   #### The `this` Object
   
@@ -264,8 +242,7 @@ How to use them we'll see later.
   `"value"` in `this.GetInputValue()` is defined in the `inputs` part of the Block.
   Its the same with `this.StoreOutputValue()`. It only can be use for Output Lines!
   
-  <details>
-    <summary>Input Object from Block</summary>
+  Input Object from Block:
     
     ```javascript
     inputs: [
@@ -283,13 +260,10 @@ How to use them we'll see later.
         }
     ]
     ```
-    
-  </details>
   
   `"action"` in `this.RunNextBlock()` is defined in the `outputs` part of the Block.
   
-  <details>
-    <summary>Output Object from Block</summary>
+  Output Object from Block:
     
     ```javascript
     outputs: [
@@ -301,15 +275,12 @@ How to use them we'll see later.
       }
     ]
     ```
-    
-  </details>
   
   #### Modul loading with `this.require()`
   
   If you want to import an Module like `fs` or `path` that **aren't** downloaded **from npm**, simply use it like anywhere else, just put it inside the `code` field:
-  
-  <details>
-    <summary>Example</summary>
+ 
+ Example:
     
     ```javascript
     code : function(cache){
@@ -317,13 +288,10 @@ How to use them we'll see later.
       // and go on like you wan't...
     }
     ```
-    
-  </details>
   
   If you want to import an Module like `discord.js` **from npm** please use `this.require()` like this:
   
-  <details>
-    <summary>Example</summary>
+  Example:
     
     ```javascript
     code : function(cache){
@@ -331,10 +299,5 @@ How to use them we'll see later.
       // and go on :)
     }
     ```
-    
-  </details>
   
   To improve Performance you should only use default Packages and if you need another, try to use a minimal libary of this function.
-  
-</details>
-
