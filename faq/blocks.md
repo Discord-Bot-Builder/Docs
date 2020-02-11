@@ -121,7 +121,7 @@ How to use them we'll see later.
   These are the Options of your Block showed in the DBB-Editor.
   *If you Update something here please restart the DBB-Editor to see it.*
   
-  ### Basic Options
+  #### Basic Options
   
   ```javascript
     options: [
