@@ -13,8 +13,8 @@ Go to you Steam Libary and open the "Propertis" of DBB and Activate the beta (Pi
 
 Make shure DBB is closed. If not you cant change the Version to Beta.
 
-![Picture Steam Lib](../assets/Steam-Lib.png)
-![Picture Game Settings](../assets/Steam-Beta.png)
+![Picture Steam Lib](assets/Steam-Lib.png)
+![Picture Game Settings](assets/Steam-Beta.png)
 
 ---
 ## 2. Make a Project
@@ -47,7 +47,7 @@ After this use "Generate Bot Invite" in the "Bot" Menu to add the Bot to your Se
 
 **Default Way**
 Go back to your Appilication on the Discord Developer Dashboard and click on "OAuth2". And Select by Scopes "bot". A new Menu show up below and you can select what Permissons the Bot need to work right. This creates a Own role on the Server for the Bot. If you want to manage the role by yourself / the Users set no Permissons and no Role will be Created.
-![Picture Discord Dashboard](../assets/Discord-DevBoard-OAuth.png)
+![Picture Discord Dashboard](assets/Discord-DevBoard-OAuth.png)
 If no Permissons are set for the Bot he has the "@everyone" Permissons or you can give it a "Role" with permissons selected by yourself.
 
 Copy the Link and Open it in the Browser of your Choice. If you get a Login Prompt from Discord login and open the Link again if you get Rediricted after login to Discord Web insted of the Bot Invite.
@@ -61,13 +61,13 @@ To create a Command click on the green "plus" Button and select the new Command.
 Click on Open to get on the Workspace.
 
 ### 4.1 Add Blocks
-If you Rightclick on any free spot you get the Menu to add [Blocks](../faq/blocks.md) to your Workspace.
+If you Rightclick on any free spot you get the Menu to add [Blocks](faq/blocks.md) to your Workspace.
 
 In the Tab "Events" we have some Blocks when the Bot starts to execute a Command/Action. In our Case we use the "Message Sent \[EVENT]" to to start whenever the bot resives a Message (permissons to read on the Channel/DM). 
-![Picture DBB EVENTS](../assets/DBB-Events.png)
+![Picture DBB EVENTS](assets/DBB-Events.png)
 
 If you click on "Message Sent \[EVENT]" a new Block apperes.
-![Picture DBB Block](../assets/DBB-Hover-Desc.png)
+![Picture DBB Block](assets/DBB-Hover-Desc.png)
 This is the beginning of your Command. Without an Event your Command never Starts working because these are the only Blocks that have no **Input** Action Connection because they get Triggerd by the Bot itself.
 The Event "Message Sent" gives you a Action Output and a Message Output connection. If you Hover on the Points you get a short Discription about what it is and what Type of connection it is.
 
