@@ -34,7 +34,7 @@ Login on to the [Discord Developer Dashboard](https://discordapp.com/developers/
 
 Go to DBB and Open your Projet for this Bot. Click on Bot in the Menubar and "Set Bot Token" and paste the Token from the Discord Devsite there. _You can use the Hotkey too \(ctrl + alt + t\)_
 
-**Currently Broken** After this use "Generate Bot Invite" in the "Bot" Menu to add the Bot to your Server. _more comming soon_
+**Experimental** After this use "Generate Bot Invite" in the "Bot" Menu to add the Bot to your Server. _more comming soon_
 
 **Default Way** Go back to your Appilication on the Discord Developer Dashboard and click on "OAuth2". And Select by Scopes "bot". A new Menu show up below and you can select what Permissons the Bot need to work right. This creates a Own role on the Server for the Bot. If you want to manage the role by yourself / the Users set no Permissons and no Role will be Created.
 
