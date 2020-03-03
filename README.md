@@ -12,7 +12,7 @@ Go to you Steam Libary and open the "Propertis" of DBB and Activate the beta \(P
 
 Make shure DBB is closed. If not you cant change the Version to Beta.
 
-![Picture Steam Lib](.gitbook/assets/steam-lib.png) ![Picture Game Settings](.gitbook/assets/steam-beta.png)
+![Picture Steam Lib](/assets/steam-lib.png) ![Picture Game Settings](/assets/steam-beta.png)
 
 ## 2. Make a Project
 
@@ -38,7 +38,7 @@ Go to DBB and Open your Projet for this Bot. Click on Bot in the Menubar and "Se
 
 **Default Way** Go back to your Appilication on the Discord Developer Dashboard and click on "OAuth2". And Select by Scopes "bot". A new Menu show up below and you can select what Permissons the Bot need to work right. This creates a Own role on the Server for the Bot. If you want to manage the role by yourself / the Users set no Permissons and no Role will be Created.
 
-![Picture Discord Dashboard](.gitbook/assets/discord-devboard-oauth.png)
+![Picture Discord Dashboard](/assets/discord-devboard-oauth.png)
 
 If no Permissons are set for the Bot he has the "@everyone" Permissons or you can give it a "Role" with permissons selected by yourself.
 
@@ -54,11 +54,11 @@ If you Rightclick on any free spot you get the Menu to add [Blocks](faq/blocks.m
 
 In the Tab "Events" we have some Blocks when the Bot starts to execute a Command/Action. In our Case we use the "Message Sent \[EVENT\]" to to start whenever the bot resives a Message \(permissons to read on the Channel/DM\).
 
-![Picture DBB EVENTS](.gitbook/assets/dbb-events.png)
+![Picture DBB EVENTS](/assets/dbb-events.png)
 
 If you click on "Message Sent \[EVENT\]" a new Block apperes.
 
-![Picture DBB Block](.gitbook/assets/dbb-hover-desc.png)
+![Picture DBB Block](/assets/dbb-hover-desc.png)
 
 This is the beginning of your Command. Without an Event your Command never Starts working because these are the only Blocks that have no **Input** Action Connection because they get Triggerd by the Bot itself. The Event "Message Sent" gives you a Action Output and a Message Output connection. If you Hover on the Points you get a short Discription about what it is and what Type of connection it is.
 
