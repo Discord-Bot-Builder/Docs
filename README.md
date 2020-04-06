@@ -1,8 +1,11 @@
 ---
-description: This is the official (community-led) documentation of Discord Bot Builder.
+description: This is the official documentation of Discord Bot Builder with the collaboration of the community.
 ---
 ## What is Discord Bot Builder?
 Discord Bot Builder is a piece of software with which you can develop your own Discord bot using a GUI. You can buy it on Steam [here](https://store.steampowered.com/app/1119570/Discord_Bot_Builder/).
+
+## What is our Discord server?
+We offer to the community the opportunity of ask of support and meet new people in our [Discord server](https://discord.gg/PAzxTDw)
 
 # Get Started
 
@@ -31,7 +34,7 @@ When you've clicked Create App, this should come up: ![Bot General Info](https:/
 Go to Bot on the side, and create the bot: ![Creating Bot]](https://heroku.is-a-bad.host/i/w9rx.png)
 You should now have this screen: ![Bot Info](https://heroku.is-a-bad.host/i/h8mz.png)
 If you want to make it so only you can invite the bot \(e.g. if it's a custom bot for your server\), just click the slider under Public Bot: ![Public Bot Slider](https://heroku.is-a-bad.host/i/a55q.png)
-Copy your bot's token. **MAKE SURE TO KEEP THE TOKEN SECRET AT ALL TIMES! IF SOMEBODY GETS HOLD OF YOUR  TOKEN, THEY CAN ABUSE YOUR BOT!** I am showing my token for documentation reasons, you should *never* show yours. ![Copying Token](https://heroku.is-a-bad.host/i/mcf1.png)
+Copy your bot's token. **MAKE SURE TO KEEP THE TOKEN SECRET AT ALL TIMES! IF SOMEBODY GETS THE BOT TOKEN, CAN ACCESS AND ABUSE YOUR BOT!** I am showing my token for documentation reasons, you should *never* show yours. ![Copying Token](https://heroku.is-a-bad.host/i/mcf1.png)
 Input it into DBB. Do this by selecting the Bot menu in the toolbar at the top of the screen and selecting Set Bot Token. \(you could also do the keyboard shortcut **Ctrl** + **Alt** + **T**.\) Then paste the token and hit Enter or click OK. ![Setting Token](https://heroku.is-a-bad.host/i/esq5.png)
 Now you need to invite the bot to your server. Get an invite link by going to the Bot menu in the toolbar at the top of the screen and selecting Generate Invite. \(you could also do the keyboard shortcut **Ctrl** + **G**.\) ![Getting Invite Link](https://heroku.is-a-bad.host/i/rvwr.png)
 Then go to your web browser and paste the invite link there. Choose which server you want to invite the bot to and click Continue. ![Inviting the Bot I](https://heroku.is-a-bad.host/i/31l6.png)
@@ -75,4 +78,10 @@ User ≠ Member \(a member is a user that is relevant to the guild only. you can
 
 Use these docs and the example workspace provided to you to make your own bot!
 
-docs rewritten by [monksharru#6969](https://discordapp.com/channels/@me/696741395045548083)
+
+# Contributors
+
+ACertainCoder#9011<br>
+Ju#2402<br>
+monksharru#6969<br>
+MrGold#0001
