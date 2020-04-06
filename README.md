@@ -40,10 +40,11 @@ Create a new application and give it a name.
 When you've clicked Create App, this should come up:
 <br>![Bot General Info](https://heroku.is-a-bad.host/i/z2u6.png)<br>
 Go to Bot on the side, and create the bot:
-![Creating Bot](https://heroku.is-a-bad.host/i/w9rx.png)<br>
+<br>![Creating Bot](https://heroku.is-a-bad.host/i/w9rx.png)<br>
 You should now have this screen:
 <br>![Bot Info](https://heroku.is-a-bad.host/i/h8mz.png)<br>
-If you want to make it so only you can invite the bot \(e.g. if it's a custom bot for your server\), just click the slider under Public Bot: ![Public Bot Slider](https://heroku.is-a-bad.host/i/a55q.png)<br>
+If you want to make it so only you can invite the bot \(e.g. if it's a custom bot for your server\), just click the slider under Public Bot:
+<br>![Public Bot Slider](https://heroku.is-a-bad.host/i/a55q.png)<br>
 Copy your bot's token. **MAKE SURE TO KEEP THE TOKEN SECRET AT ALL TIMES! IF SOMEBODY GETS THE BOT TOKEN, CAN ACCESS AND ABUSE YOUR BOT!** I am showing my token for documentation reasons, you should *never* show yours.
 <br>![Copying Token](https://heroku.is-a-bad.host/i/mcf1.png)<br>
 Input it into DBB. Do this by selecting the Bot menu in the toolbar at the top of the screen and selecting Set Bot Token. \(you could also do the keyboard shortcut **Ctrl** + **Alt** + **T**.\) Then paste the token and hit Enter or click OK.
