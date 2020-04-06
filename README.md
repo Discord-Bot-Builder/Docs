@@ -1,83 +1,78 @@
 ---
-description: Official documentation about Discord Bot Builder.
+description: This is the official (community-led) documentation of Discord Bot Builder.
 ---
+## What is Discord Bot Builder?
+Discord Bot Builder is a piece of software with which you can develop your own Discord bot using a GUI. You can buy it on Steam [here](https://store.steampowered.com/app/1119570/Discord_Bot_Builder/).
 
 # Get Started
 
-At the Moment we only Support and Document the Beta because this is the all new DBB!
+We will only support and document the beta version of DBB because this is the rewritten version.
 
-## 1.Get the Beta
+## 1. Get the Beta Version
 
-Go to you Steam Libary and open the "Propertis" of DBB and Activate the beta \(Pictures\).
+Open Steam and go to your library.
+Right click on Discord Bot Builder and select Properties. ![Right Click Menu](https://heroku.is-a-bad.host/i/qvwi.png)
+In the new window that came up, select the Betas tab at the top then in the dropdown menu, select the beta version. If you can't open the dropdown menu, make sure DBB is closed. ![Selecting Beta](https://heroku.is-a-bad.host/i/47eh.png)
 
-Make shure DBB is closed. If not you cant change the Version to Beta.
+## 2. Create Your First Project
 
-![Picture Steam Lib](/assets/Steam-Lib.png) ![Picture Game Settings](/assets/Steam-Beta.png)
+If you need to, wait until the beta version has downloaded and start DBB. You will be greeted with this screen: ![Main Screen](https://heroku.is-a-bad.host/i/6cyb.png)
+Click on Create New Project. You should now have this screen: ![Create New Project Screen](https://heroku.is-a-bad.host/i/j0aw.png)
+The Bot Folder Name is the name of your project and the name of the folder that will contain your bot.
+The Bot Folder Path is the directory on your computer where the new folder containing your bot will be created.
+For example: ![Create New Project Example]
+The bot will be saved on my desktop in the folder and with the project name 'My First Bot'.
 
-## 2. Make a Project
+## 3. Create a New Bot Account and Set it Up in DBB
 
-Wait until the download of the Beta is done \(if you have to\) and start DBB create a new or open a Project.
-
-```text
-The Bot Folder name is the Name of the Folder that gets Created.
-The Bot Folder Path is the path to the Bot.
-
-Exaple:
-    Bot Folder Name : MyFirstBot
-    Bot Folder Path : C:/User/Desktop
-    This means the Bot is saved on the Desktop in the Folder MyFirstBot.
-```
-
-## 3. Create a Bot Account for Discord and Setup up in DBB
-
-Login on to the [Discord Developer Dashboard](https://discordapp.com/developers/applications/) and create a new Appilication give it a Name. Select your new App and click on "Bot", create a Bot User for this App with "Add Bot". Change the Settings of your Bot like you want. _\(the Permissons tab is not a setting, you don't need this here.\)_ After this copy your Token by clicking on "copy". **BE VERY CAREFUL WITH THIS TOKEN, ANYONE CAN ABUSE YOUR BOT AND THE SERVERS FROM IT**
-
-Go to DBB and Open your Projet for this Bot. Click on Bot in the Menubar and "Set Bot Token" and paste the Token from the Discord Devsite there. _You can use the Hotkey too \(ctrl + alt + t\)_
-
-**Experimental** After this use "Generate Bot Invite" in the "Bot" Menu to add the Bot to your Server. _more comming soon_
-
-**Default Way** Go back to your Appilication on the Discord Developer Dashboard and click on "OAuth2". And Select by Scopes "bot". A new Menu show up below and you can select what Permissons the Bot need to work right. This creates a Own role on the Server for the Bot. If you want to manage the role by yourself / the Users set no Permissons and no Role will be Created.
-
-![Picture Discord Dashboard](/assets/Discord-DevBoard-OAuth.png)
-
-If no Permissons are set for the Bot he has the "@everyone" Permissons or you can give it a "Role" with permissons selected by yourself.
-
-Copy the Link and Open it in the Browser of your Choice. If you get a Login Prompt from Discord login and open the Link again if you get Rediricted after login to Discord Web insted of the Bot Invite. Select the Server to Invite and the Permissions that you want to be set if any. Press autorize and solve the Re-Captcha. Now the Bot is ready to work on your Server. If you want to invite the Bot to other Server simply share the Link or use it again. _\(Make sure the Bot is Public that other People can add it via the Link\)_
+Go on to the [Discord Developer Portal](https://discordapp.com/developers). If you've never made a bot before, you should be shown this screen: ![Empty Developer Portal](https://heroku.is-a-bad.host/i/njjm.png)
+Create a new application and give it a name. ![Creating New Application](https://heroku.is-a-bad.host/i/0k7v.png)
+When you've clicked Create App, this should come up: ![Bot General Info](https://heroku.is-a-bad.host/i/z2u6.png)
+Go to Bot on the side, and create the bot: ![Creating Bot]](https://heroku.is-a-bad.host/i/w9rx.png)
+You should now have this screen: ![Bot Info](https://heroku.is-a-bad.host/i/h8mz.png)
+If you want to make it so only you can invite the bot \(e.g. if it's a custom bot for your server\), just click the slider under Public Bot: ![Public Bot Slider](https://heroku.is-a-bad.host/i/a55q.png)
+Copy your bot's token. **MAKE SURE TO KEEP THE TOKEN SECRET AT ALL TIMES! IF SOMEBODY GETS HOLD OF YOUR  TOKEN, THEY CAN ABUSE YOUR BOT!** I am showing my token for documentation reasons, you should *never* show yours. ![Copying Token](https://heroku.is-a-bad.host/i/mcf1.png)
+Input it into DBB. Do this by selecting the Bot menu in the toolbar at the top of the screen and selecting Set Bot Token. \(you could also do the keyboard shortcut **Ctrl** + **Alt** + **T**.\) Then paste the token and hit Enter or click OK. ![Setting Token](https://heroku.is-a-bad.host/i/esq5.png)
+Now you need to invite the bot to your server. Get an invite link by going to the Bot menu in the toolbar at the top of the screen and selecting Generate Invite. \(you could also do the keyboard shortcut **Ctrl** + **G**.\) ![Getting Invite Link](https://heroku.is-a-bad.host/i/rvwr.png)
+Then go to your web browser and paste the invite link there. Choose which server you want to invite the bot to and click Continue. ![Inviting the Bot I](https://heroku.is-a-bad.host/i/31l6.png)
+On the next page, a huge list of permissions will come up. Change them as you wish. Scroll down to the bottom \(there will be some information about your bot\) and click Authorize. ![Inviting the Bot II](https://heroku.is-a-bad.host/i/fjii.png)
+Finally, complete the reCAPTCHA, click Verify, and this message should display: ![Successfully invited the bot](https://heroku.is-a-bad.host/i/fgcr.png)
+That means you're all set and the bot's now in your server. ![Bot Profile](https://heroku.is-a-bad.host/i/ww5x.png)
 
 ## 4. Create a Command
 
-To create a Command click on the green "plus" Button and select the new Command. Click on Open to get on the Workspace.
+To create a new command, click on the green + button next to the search bar at the top of the screen. ![Green Plus](https://heroku.is-a-bad.host/i/4d54.png)
 
-### 4.1 Add Blocks
+### 4.1. Customising Your Workspace
 
-If you Rightclick on any free spot you get the Menu to add [Blocks](faq/blocks.md) to your Workspace.
+Once you have clicked on the + icon, a new workspace was created. ![New Workspace](https://heroku.is-a-bad.host/i/y4in.png)
+You can customise the thumbnail, title and description.
 
-In the Tab "Events" we have some Blocks when the Bot starts to execute a Command/Action. In our Case we use the "Message Sent \[EVENT\]" to to start whenever the bot resives a Message \(permissons to read on the Channel/DM\).
+#### 4.1.1. Customising the Thumbnail
 
-![Picture DBB EVENTS](/assets/DBB-Events.png)
+To customise the thumbnail of a workspace, hover over the empty grey space on the top right of the screen. Click on it, paste an image and hit enter or click OK. Boom! You're done. ![Customising Thumbnail](https://heroku.is-a-bad.host/i/8une.png)
+Now your workspace looks nice and pretty. ![Nice and Pretty](https://heroku.is-a-bad.host/i/nobz.png)
 
-If you click on "Message Sent \[EVENT\]" a new Block apperes.
+#### 4.1.2. Customising the Title
 
-![Picture DBB Block](/assets/DBB-Hover-Desc.png)
+To customise the title of a workspace, click on My New Workspace and change it. Simple as. ![Customising Title](https://heroku.is-a-bad.host/i/j55a.png)
 
-This is the beginning of your Command. Without an Event your Command never Starts working because these are the only Blocks that have no **Input** Action Connection because they get Triggerd by the Bot itself. The Event "Message Sent" gives you a Action Output and a Message Output connection. If you Hover on the Points you get a short Discription about what it is and what Type of connection it is.
+#### 4.1.3. Customising the Description
 
-### 4.2 Connect Blocks / Lines
+To customise the description of a workspace, click anywhere on the empty space above the 3 buttons at the bottom. Then type whatever you want. Simple as. ![Customising Description](https://heroku.is-a-bad.host/i/utk1.png)
 
-**Lines** are the Connection of your Blocks to pass Variables and the flow of your Command \(what Block gets executed next\).
+### 4.2. Adding Blocks
 
-There are Different Variable types: `unspecified, undefined, null, object, boolean, number, text, list, date, action`
+If you right-click on any empty spot in the workspace, the Blocks menu comes up. In the Events tab, there are some blocks so the bot can execute an action. In these docs, I will use the Message Sent Event block to execute an action whenever the bot receives a message \(either in the server or its DMs\). ![Adding a Block]
+This is the beginning of your command. The Message Sent Event block has an Action Output and a Message Output. If you don't know what this means, DBB is also well documented: whenever you hover over anything, it tells you what it is: ![Message Sent Event Block Description](https://heroku.is-a-bad.host/i/1duq.png)
 
-The type of the Line **needs to match** for connecting tow Blocks. On the Output Side there can be as many Connections per Point \(exept by the action type\) as you need / want. Input can always only be one Connection per Point.
+## 4.3. Good to know
 
-### 4.3 Important "nice to know"
-
-```text
 Server = Guild
-User != Member || Member are users that stays in dependency to the Guild. Means that you can get and set Roles and so on.
-```
+User ≠ Member \(a member is a user that is relevant to the guild only. you can execute actions to do with a specific server with a member\)
 
-## Now its your Turn.
+### 4.4. Your Turn
 
-This are some Important Information about the Basics of DBB. Now you can start Building your own Flows and create awesome Commands and automated procedures.
+Use these docs and the example workspace provided to you to make your own bot!
 
+docs rewritten by [monksharru#6969](https://discordapp.com/channels/@me/696741395045548083)
